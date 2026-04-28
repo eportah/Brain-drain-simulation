@@ -27,9 +27,8 @@ Consists of three active agent entities and one passive environmental entity:
 
 ---
 
-### Kaggle Dataset
-
-*HR Analytics: Job Change of Data Scientists*. 
+### Empirical Foundation
+The behavioral logic of the agents was informed by the [HR Analytics: Job Change of Data Scientists](https://www.kaggle.com/datasets/arashnic/hr-analytics-job-change-of-data-scientists) dataset on Kaggle.
 
 Correlation analysis from this dataset provided the basis for the relationship between CDI and senior attrition.
 
