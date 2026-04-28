@@ -157,41 +157,25 @@ end
     <button x="305" y="10" height="40" disableUntilTicks="false" forever="true" kind="Observer" width="55">go</button>
   </widgets>
   <info>## WHAT IS IT?
-
-(a general understanding of what the model is trying to show or explain)
+Simulates Social Contagion and Brain Drain within a tech workforce. It explores how external economic indicators (City Development Index) influence internal attrition rates through peer-to-peer stress and predatory recruitment.
 
 ## HOW IT WORKS
+Utilizes three agent types:
+**Seniors (Blue):** If CDI is low, they have a chance of leaving, turning gray but not vanishing. 
+**Juniors (Cyan):** Accumulate stress by being near "left" seniors or being poached by recruiters.
+**Recruiters (Red):** Disruptors who move randomly through the space to poach stressed juniors.
 
-(what rules the agents use to create the overall behavior of the model)
+Background color darkens as the junior survival rate drops, providing real-time visual feedback on the company's health.
 
 ## HOW TO USE IT
-
-(how to use the model, including a description of each of the items in the Interface tab)
-
-## THINGS TO NOTICE
-
-(suggested things for the user to notice while running the model)
-
-## THINGS TO TRY
-
-(suggested things for the user to try to do (move sliders, switches, etc.) with the model)
+1. Adjust the **`city-development-index`** slider (Lower = worse economy).
+2. Use the **initial-agent** sliders to set the starting populations.
+3. Click **SETUP** to initialize the environment.
+4. Click **GO** to start the simulation.
+5. Observe the **Total Exits** plot to see the tipping point emerge graphically.
 
 ## EXTENDING THE MODEL
-
-(suggested things to add or change in the Code tab to make the model more complicated, detailed, accurate, etc.)
-
-## NETLOGO FEATURES
-
-(interesting or unusual features of NetLogo that the model uses, particularly in the Code tab; or where workarounds were needed for missing features)
-
-## RELATED MODELS
-
-(models in the NetLogo Models Library and elsewhere which are of related interest)
-
-## CREDITS AND REFERENCES
-
-(a reference to the model's URL on the web if it has one, as well as any other necessary credits, citations, and links)
-</info>
+This model was developed as part of a multi-stage study, featuring a Python statistical analysis informed by the *Kaggle: HR Analytics: Job Change of Data Scientists* dataset to validate behavioral thresholds and exit probabilities.</info>
   <turtleShapes>
     <shape name="default" rotatable="true" editableColorIndex="0">
       <polygon color="-1920102913" filled="true" marked="true">
